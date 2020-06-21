@@ -1,6 +1,6 @@
-# THYMIO PLAYGROUND
+# THYMIO II PLAYGROUND
 
-Premiers pas avec Thymio
+Premiers pas avec Thymio II.
 
 ## MOOC EPFL
 
@@ -12,35 +12,25 @@ https://www.thymio.org/fr/programmer/
 
 > On peut utiliser l’environnement de programmation avec un ou plusieurs vrais Thymios ou avec un simulateur. Les simulateurs sont fournis dans des cartes (maps). Ce dépôt Git en contient quelques-unes dans le répertoire `maps`.
 
+## Vidéos première programmation
 
-## Première programmation
+- [Introduction au robot Thymio (1/4) Thymio et ses comportements de base](https://youtu.be/Qc6nL8twWSI)
+- [Introduction au robot Thymio (2/4) La programmation visuelle VPL](https://youtu.be/dA-BW38kl6E)
+- [Introduction au robot Thymio (3/4) La programmation visuelle avancée VPL](https://youtu.be/l2JRdcBNIdY)
+- [Introduction au robot Thymio (4/4) La programmation textuelle](https://youtu.be/IpL5k78kXVI)
 
-Introduction au robot Thymio (1/4) Thymio et ses comportements de base
-https://youtu.be/Qc6nL8twWSI
+## De quoi Thymio est composé
 
-Introduction au robot Thymio (2/4) La programmation visuelle VPL
-https://youtu.be/dA-BW38kl6E
-
-Introduction au robot Thymio (3/4) La programmation visuelle avancée VPL
-https://youtu.be/l2JRdcBNIdY
-
-Introduction au robot Thymio (4/4) La programmation textuelle
-https://youtu.be/IpL5k78kXVI
-
-
-## Hardware
+http://wiki.thymio.org/fr:thymiospecifications
 
 Microcontroleur : Microchip PIC24FJ128GB106
 
-### INPUTS
+![De quoi Thymio est composé](./images/Wireless-thymioII-sensor-actuator-color-fr.png )
 
-- 1 × thermistor
-- 1 × IR RC5 receiver
-- 5 × front IR sensor
-- 2 × back IR sensor
-- 2 × ground IR sensor
-- 5 × capacitive sensor
-- 1 × micro SD memory card slot
-- 1 × 3-axis accelerometer
-- 1 × microphone
+## Sons
+
+> Pour la carte microSD choisir une carte normale (éviter SDHC ou SDXC) de 2 ou 4 GB (<http://wiki.thymio.org/fr:thymiomicrosd>).
+
+http://wiki.thymio.org/fr:thymiosoundlibrary
+
 
