@@ -1,0 +1,33 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+
+
+<!--node -->
+<node name=""><![CDATA[var parti                #started flag
+timer.period[0]=100     # 100ms
+call leds.top(0, 0, 32)    # bleu
+
+onevent button.forward    #start
+    parti=1
+    motor.left.target = -200
+    motor.right.target = 200
+    call leds.top(0, 32, 0)
+
+onevent button.backward        # stop
+    parti=0
+    call leds.top(32, 0, 0)
+    motor.left.target = 0
+    motor.right.target = 0
+
+onevent timer0    #every 100ms = 0.1s
+    if parti ==1 then
+        motor.left.target = motor.left.target+1
+        motor.right.target = motor.right.target+1
+    end
+]]></node>
+
+
+</network>

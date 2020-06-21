@@ -1,0 +1,43 @@
+<!DOCTYPE aseba-playground>
+<aseba-playground> 
+	<author name="Martin Canals" /> 
+	 <thanks name="Tungsteno Design" />
+	<description lang="en">A ground board for Thymio Challenge Pack.</description>
+	<description lang="fr">Un environnement pour la voiture autonome.</description>
+
+	<color name="wall" r="0.8" g="1.0" b="1.0" /> 
+	<color name="white" r="1.0" g="1.0" b="1.0" /> 
+
+	<world w="160" h="160" color="white"  groundTexture="voiture_autonome.png" />
+
+	<wall x="60.0" y= "33.5" l1="27.0" l2="5" h="10" mass="-1" color="wall" angle="1.5707963267948966" />
+	<wall x="55.73415984748655" y= "59.7917525510593" l1="26.96859844592062" l2="5" h="10" mass="-1" color="wall" angle="1.892682147559965" />
+	<wall x="46.498546122608" y= "82.04974047805209" l1="21.383008352722815" l2="5" h="10" mass="-1" color="wall" angle="2.0542433283620967" />
+	<wall x="42.475396087836245" y= "101.10053917211829" l1="19.262393425659305" l2="5" h="10" mass="-1" color="wall" angle="1.472350167582264" />
+	<wall x="50.2850402729814" y= "113.0516613342345" l1="14.519180854408946" l2="5" h="10" mass="-1" color="wall" angle="0.33205946754290094" />
+	<wall x="64.5740304602666" y= "113.709110089109" l1="15.240220589183409" l2="5" h="10" mass="-1" color="wall" angle="-0.22621381394732265" />
+	<wall x="73.6852820096026" y= "104.95284236637035" l1="14.491736426683293" l2="5" h="10" mass="-1" color="wall" angle="-1.3360613466970612" />
+	<wall x="74.6852820096026" y= "86.95284236637035" l1="21.948518613814663" l2="5" h="10" mass="-1" color="wall" angle="-1.6332814684957968" />
+	<wall x="76.0" y= "66.0" l1="20.396078054371138" l2="5" h="10" mass="-1" color="wall" angle="-1.373400766945016" />
+	<wall x="89.0" y= "50.5" l1="24.596747752497688" l2="5" h="10" mass="-1" color="wall" angle="-0.4636476090008061" />
+	<wall x="110.0" y= "42.5" l1="20.615528128088304" l2="5" h="10" mass="-1" color="wall" angle="-0.24497866312686414" />
+	<wall x="130.0" y= "40.0" l1="20.0" l2="5" h="10" mass="-1" color="wall" angle="0.0" />
+	<wall x="30.0" y= "33.0" l1="26.0" l2="5" h="10" mass="-1" color="wall" angle="1.5707963267948966" />
+	<wall x="25.0" y= "57.5" l1="25.079872407968907" l2="5" h="10" mass="-1" color="wall" angle="1.9809236673363877" />
+	<wall x="15.0" y= "75.0" l1="15.620499351813308" l2="5" h="10" mass="-1" color="wall" angle="2.2655346029916" />
+	<wall x="10.0" y= "94.0" l1="26.0" l2="5" h="10" mass="-1" color="wall" angle="1.5707963267948966" />
+	<wall x="16.0" y= "118.5" l1="25.942243542145693" l2="5" h="10" mass="-1" color="wall" angle="1.089909046599561" />
+	<wall x="31.0" y= "135.0" l1="20.591260281974" l2="5" h="10" mass="-1" color="wall" angle="0.507098504392337" />
+	<wall x="53.5" y= "141.5" l1="27.16615541441225" l2="5" h="10" mass="-1" color="wall" angle="0.11065722117389565" />
+	<wall x="77.0" y= "141.5" l1="20.223748416156685" l2="5" h="10" mass="-1" color="wall" angle="-0.14888994760949725" />
+	<wall x="93.5" y= "132.5" l1="19.849433241279208" l2="5" h="10" mass="-1" color="wall" angle="-0.8567056281827387" />
+	<wall x="102.5" y= "113.5" l1="23.53720459187964" l2="5" h="10" mass="-1" color="wall" angle="-1.356735643231075" />
+	<wall x="104.73961890010051" y= "90.48660699043685" l1="23.032673914232586" l2="5" h="10" mass="-1" color="wall" angle="-1.5934079688830138" />
+	<wall x="112.23961890010051" y= "72.98660699043685" l1="19.60234456116152" l2="5" h="10" mass="-1" color="wall" angle="-0.6570771398990651" />
+	<wall x="130.0" y= "66.5" l1="20.024984394500787" l2="5" h="10" mass="-1" color="wall" angle="-0.04995839572194276" />
+	<robot type="thymio2" x="70" y="15" port="33333" name="Thymio" /> 
+<cylinder x="10.00" y="10.00" r="2.00" h="10.00" mass="1" color="white"/>
+
+	<process command=":asebahttp --autorestart tcp:localhost;33333" /> 
+
+</aseba-playground>

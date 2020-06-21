@@ -1,0 +1,50 @@
+<!DOCTYPE aesl-source>
+<network>
+<node><toolsPlugins>
+<ThymioVisualProgramming>
+<vplroot xml-format-version="1">
+<program advanced_mode="1">
+<set>
+<block value3="0" name="button" type="event" value1="0" value5="0" value6="0" value0="0" value4="1" value2="0"/>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+<block name="move" type="action" value1="0" value0="0"/>
+<block name="colortop" type="action" value1="0" value0="32" value2="0"/>
+</set>
+<set>
+<block value3="0" name="button" type="event" value1="0" value5="0" value6="0" value0="1" value4="0" value2="0"/>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+<block name="move" type="action" value1="500" value0="500"/>
+<block name="colortop" type="action" value1="32" value0="0" value2="0"/>
+</set>
+<set>
+<block value3="0" name="button" type="event" value1="0" value5="0" value6="0" value0="0" value4="0" value2="1"/>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+<block name="move" type="action" value1="-500" value0="-500"/>
+<block name="colortop" type="action" value1="0" value0="12" value2="32"/>
+</set>
+<set>
+<block value3="625" name="proxground" type="event" value1="2" value0="0" value2="125"/>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+<block name="move" type="action" value1="500" value0="500"/>
+<block name="colortop" type="action" value1="32" value0="0" value2="32"/>
+</set>
+<set>
+<block value3="875" name="proxground" type="event" value1="2" value0="0" value2="875"/>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+<block name="move" type="action" value1="350" value0="300"/>
+<block name="colortop" type="action" value1="29" value0="0" value2="11"/>
+</set>
+<set>
+<block value3="450" name="proxground" type="event" value1="1" value0="1" value2="400"/>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+<block name="colortop" type="action" value1="10" value0="8" value2="23"/>
+</set>
+<set>
+<block value3="0" name="statefilter" type="state" value1="0" value0="0" value2="0"/>
+</set>
+</program>
+</vplroot>
+</ThymioVisualProgramming>
+</toolsPlugins>
+</node>
+</network>

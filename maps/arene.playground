@@ -1,0 +1,20 @@
+<!DOCTYPE aseba-playground>
+<aseba-playground> 
+	<author name="Martin Canals" /> 
+	 <thanks name="Tungsteno Design" />
+	<description lang="en">A ground board for Thymio Challenge Pack.</description>
+	<description lang="fr">Un environnement pour le robot nettoyeur de place </description>
+
+	<color name="bodies" r="0.8" g="0.8" b="1.0" /> 
+	<color name="white" r="1.0" g="1.0" b="1.0" /> 
+
+	<world w="160" h="160" color="white" groundTexture="arene.png" />
+
+	<wall x="80" y= "80" l1="5" l2="5" h="5" mass="5" color="bodies" angle="0.0" />
+	<wall x="120" y= "80" l1="6" l2="7" h="5" mass="4" color="bodies" angle="0.0" />
+	<wall x="40" y= "90" l1="4" l2="4" h="8" mass="1" color="bodies" angle="0.0" />
+	<robot type="thymio2" x="80" y="80" port="33333" name="Thymio" /> 
+
+	<process command=":asebahttp --autorestart tcp:localhost;33333" /> 
+
+</aseba-playground>

@@ -1,0 +1,28 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+
+
+<!--node Thymio on nicobook-3.local - 42751-->
+<node nodeId="{fbc64080-8173-4fd9-9efe-eac9905bd747}" name="Thymio on nicobook-3.local - 42751"><![CDATA[var itera = 0
+var speed = 30
+
+onevent temperature
+itera = itera + 1
+if itera==1 then
+    motor.left.target = 230
+    motor.right.target = -140
+end
+if itera==4 then
+    motor.left.target = speed
+    motor.right.target = speed
+    speed = speed + 2
+end
+if itera==7 then
+    itera = 0
+end]]></node>
+
+
+</network>
