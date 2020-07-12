@@ -1,0 +1,56 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+<constant value="0" name="PLAY_SOUND"/>
+<constant value="100" name="SPEED_STRAIGHT"/>
+<constant value="500" name="SPEED_TURN"/>
+<constant value="1" name="STATE_MACHINE_ID_MAX"/>
+<constant value="1000" name="T_STRAIGHT"/>
+<constant value="2000" name="T_TURN"/>
+
+
+<!--node Thymio_II-->
+<node nodeId="{0bb0ef4b-170a-43b9-97b0-e29195b5a60e}" name="Thymio_II"><![CDATA[###
+#
+# Blink
+#
+# Nicolas Jeanmonod
+# 2020-07-12
+#
+# Documentation du language Aseba
+# - http://wiki.thymio.org/fr:asebalanguage
+# - http://wiki.thymio.org/fr:thymioapi
+# - http://wiki.thymio.org/fr:asebastdnative
+#
+##
+
+var state_machine_id = 0
+
+call leds.top(32, 0, 32)
+
+timer.period[0] = T_STRAIGHT
+
+if  PLAY_SOUND == 1 then
+    call sound.system(2)
+end
+
+onevent timer0
+    callsub blink
+    state_machine_id  += 1
+    if state_machine_id  > STATE_MACHINE_ID_MAX then
+	    state_machine_id = 0
+    end
+
+sub blink
+	if  state_machine_id == 0 then
+		call leds.top(32, 0, 0)
+
+	elseif  state_machine_id == 1 then
+		call leds.top(0, 32, 0)
+    end
+]]></node>
+
+
+</network>

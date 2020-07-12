@@ -5,24 +5,25 @@
 <!--list of global events-->
 
 
-<!--node Thymio on nicobook-3.local - 42751-->
-<node nodeId="{fbc64080-8173-4fd9-9efe-eac9905bd747}" name="Thymio on nicobook-3.local - 42751"><![CDATA[var itera = 0
-var speed = 30
+<!--node Thymio_II-->
+<node name="Thymio_II" nodeId="{0bb0ef4b-170a-43b9-97b0-e29195b5a60e}"><![CDATA[# http://wiki.thymio.org/fr:thymiodrawing
 
-onevent temperature
-itera = itera + 1
-if itera==1 then
-    motor.left.target = 230
-    motor.right.target = -140
-end
-if itera==4 then
-    motor.left.target = speed
-    motor.right.target = speed
-    speed = speed + 2
-end
-if itera==7 then
-    itera = 0
-end]]></node>
+var itera = 0
+timer.period[0] = 1000 # 1000ms = 1s 
+
+onevent timer0
+    itera = itera + 1
+    if itera==1 then
+        motor.left.target = 230
+        motor.right.target = -120
+    end
+    if itera==4 then
+        motor.left.target = 80
+        motor.right.target = 80
+    end
+    if itera==7 then
+        itera = 0
+    end]]></node>
 
 
 </network>

@@ -5,12 +5,14 @@
 <!--list of global events-->
 
 
-<!--node -->
-<node name=""><![CDATA[var parti                #started flag
+<!--node Thymio_II-->
+<node name="Thymio_II" nodeId="{0bb0ef4b-170a-43b9-97b0-e29195b5a60e}"><![CDATA[# http://wiki.thymio.org/fr:thymiodrawing
+
+var parti                # parti ou pas
 timer.period[0]=100     # 100ms
 call leds.top(0, 0, 32)    # bleu
 
-onevent button.forward    #start
+onevent button.forward    #départ
     parti=1
     motor.left.target = -200
     motor.right.target = 200
@@ -22,7 +24,7 @@ onevent button.backward        # stop
     motor.left.target = 0
     motor.right.target = 0
 
-onevent timer0    #every 100ms = 0.1s
+onevent timer0    #toutes les 100ms = 0.1s
     if parti ==1 then
         motor.left.target = motor.left.target+1
         motor.right.target = motor.right.target+1

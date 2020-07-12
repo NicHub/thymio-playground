@@ -1,0 +1,65 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+<constant name="PLAY_SOUND" value="0"/>
+<constant name="SPEED_STRAIGHT" value="100"/>
+<constant name="SPEED_TURN" value="500"/>
+<constant name="STATE_MACHINE_ID_MAX" value="1"/>
+<constant name="T_STRAIGHT" value="1000"/>
+<constant name="T_TURN" value="2000"/>
+
+
+<!--node Thymio_II-->
+<node name="Thymio_II" nodeId="{0bb0ef4b-170a-43b9-97b0-e29195b5a60e}"><![CDATA[###
+#
+# Dessine un carré
+#
+# Nicolas Jeanmonod
+# 2020-07-12
+#
+# Documentation du language Aseba
+# - http://wiki.thymio.org/fr:asebalanguage
+# - http://wiki.thymio.org/fr:thymioapi
+# - http://wiki.thymio.org/fr:asebastdnative
+#
+##
+
+var state_machine_id = 0
+
+call leds.top(32, 0, 32)
+
+timer.period[0] = T_STRAIGHT
+
+onevent timer0
+    if  PLAY_SOUND == 1 then
+        call sound.system(2)
+    end
+    callsub draw
+    state_machine_id += 1
+    if state_machine_id > STATE_MACHINE_ID_MAX then
+        state_machine_id = 0
+    end
+
+sub draw
+
+    # côté du carré
+    if  state_machine_id == 0 then
+        call leds.top(32, 0, 0)
+         motor.left.target = SPEED_STRAIGHT
+        motor.right.target = SPEED_STRAIGHT
+        timer.period[0] = T_TURN
+
+    # tourne
+    elseif state_machine_id == 1 then
+        call leds.top(0, 32, 0)
+        motor.left.target = 0
+        motor.right.target = SPEED_TURN
+        timer.period[0] = T_STRAIGHT
+
+    end
+]]></node>
+
+
+</network>
