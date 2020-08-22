@@ -126,10 +126,6 @@ Voir aussi: [Flasher son code dans Thymio](http://wiki.thymio.org/fr:thymioflash
 > Curieusement, la documentation stipule qu’en suivant la procédure ci-dessus le programme sera enregistré sur une carte SD. Mais pour avoir essayé, il n’y a pas besoin de carte SD, le programme est donc enregistré dans une EEPROM.
 > Voir [Loading a program from the SD card](https://mobsya.github.io/aseba/thymio-api.html#loading-a-program-from-the-sd-card).
 
-## Utilisation sans programmation
-
-Thymio est fourni avec six programmes appelés “comportements préprogrammés” ou “comportements de base”. Ces programmes (ou comportements) sont toujours disponibles, même si on programme le robot soi-même. Ils sont particulièrement bien adaptés pour une première découverte de Thymio et seront suffisants pour les plus jeunes enfants.
-
 ## Firmware
 
 ### Lire la version du firmware installée sur Thymio
