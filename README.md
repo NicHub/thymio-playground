@@ -8,17 +8,17 @@ Premiers pas avec Thymio II.
 
 L’archive ZIP de ce dépôt a une taille d’environ 16 Mo. Elle contient entre autres quelques exemples de programmes et des cartes pour la simulation.
 
-https://github.com/NicHub/thymio-playground/archive/master.zip
+<https://github.com/NicHub/thymio-playground/archive/master.zip>
 
 ## Installer Thymio Suite
 
 Pour programmer Thymio, il faut d’abord télécharger l’application “Thymio Suite”.
 
-https://github.com/Mobsya/aseba/releases
+<https://github.com/Mobsya/aseba/releases>
 
 ou
 
-https://www.thymio.org/fr/programmer/
+<https://www.thymio.org/fr/programmer/>
 
 ## Recharger Thymio
 
@@ -139,7 +139,7 @@ Thymio est fourni avec six programmes appelés “comportements préprogrammés�
 
 ### Liste des versions du firmware
 
-https://github.com/Mobsya/aseba-target-thymio2/releases
+<https://github.com/Mobsya/aseba-target-thymio2/releases>
 
 ### Mise à jour du firmware
 
@@ -233,7 +233,7 @@ ls -1 /dev/{tty,cu}.*
 
 ### Site officiel
 
-https://www.thymio.org/fr/
+<https://www.thymio.org/fr/>
 
 ### GitHub
 
@@ -243,8 +243,8 @@ Fork d’Aseba: <https://github.com/Mobsya/aseba>
 
 ### Read the doc
 
-https://mobsya.github.io/aseba/
+<https://mobsya.github.io/aseba/>
 
 ### MOOC EPFL
 
-https://courseware.epfl.ch/courses/course-v1:EPFL+THYMIO+2019/about
+<https://courseware.epfl.ch/courses/course-v1:EPFL+THYMIO+2019/about>
