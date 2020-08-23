@@ -143,25 +143,15 @@ Si une nouvelle version du firmware est disponible, Thymio Suite proposera d’e
 
 ## Les composants de Thymio
 
-- Amical (vert)
-- Explorateur (jaune)
-- Peureux (rouge)
-- Attentif (bleu foncé)
-- Inspecteur (bleu clair)
-- Obéissant (violet)
+http://wiki.thymio.org/fr:thymiospecifications
 
-Pour les détails de ces comportements, voir : <https://www.thymio.org/fr/comportements-de-base/>
+Microcontrôleur : Microchip PIC24FJ128GB106
 
 ![Les composants de Thymio](./images/Wireless-thymioII-sensor-actuator-color-fr.png)
 
-- Allumer Thymio (voir ci-dessus)
-- Effleurer un des 4 boutons en forme de triangle.
-- Chaque effleurement sélectionne le comportement suivant, mais sans l’activer.
-- Pour activer le comportement, il faut appuyer sur le bouton rond.
-- Pour mettre en pause le comportement, il suffit d’appuyer à nouveau sur le bouton rond.
-- Une fois qu’on a exploré un comportement, on peut le mettre en pause en appuyant sur le bouton rond et en choisir un autre avec les touches en forme de triangle.
+## Carte SD
 
-> En plus des six comportements ci-dessus, il y a un mode sans couleur qui est visible si un programme est flashé sur Thymio par l’utilisateur (voir « Enregistrer un programme dans l’EEPROM » ci-dessous).
+Pour la carte microSD choisir une carte normale (éviter SDHC ou SDXC) de 2 ou 4 GB (<http://wiki.thymio.org/fr:thymiomicrosd>).
 
 La carte SD peut contenir :
 
