@@ -174,36 +174,7 @@ La carte SD peut contenir :
 
 ## Sons
 
-Thymio peut être programmé avec 4 langages de programmation différents. Si vous ne savez pas quel langage choisir, commencez par VPL et continuez avec Aseba, ce sont les deux langages développés particulièrement pour Thymio. Les deux autres langages, Scratch et Blockly, ont l’avantage de pouvoir être utilisés pour programmer d’autres robots que Thymio, mais ils ne sont pas spécialement pratiques parce qu’ils sont exécutés dans un navigateur web et cela implique quelques limitations sur l’enregistrement et la réouverture des programmes. De plus, Scratch est plus compliqué à mettre en route que Blockly et n’est pas exécuté sur le robot, mais sur l’ordinateur, ce qui oblige de connecter Thymio en permanence à l’ordinateur.
-
-L’application “Thymio Suite” intègre quatre environnements de développement (IDE) : un pour chaque langage de programmation.
-
-On peut utiliser l’environnement de programmation avec un ou plusieurs Thymio ou avec un simulateur. Les simulateurs sont fournis dans des cartes (maps). Ce dépôt Git en contient quelques-unes dans le répertoire `maps`.
-
-Les comportements préprogrammés de Thymio sont toujours disponibles, même si on programme Thymio soi-même. Il suffit d’éteindre et de rallumer Thymio pour y avoir accès.
-
-Le tableau ci-dessous indique les liens vers les documentations de chaque langage.
-
-| LANGAGE | ENVIRONNEMENT<br/>DE DÉVELOPPEMENT<br/>(IDE) | CRÉATEURS                                  | DOCUMENTATION                                       |
-| :------ | :------------------------------------------- | :----------------------------------------- | :-------------------------------------------------- |
-| VPL     | VPL                                          | EPFL                                       | http://wiki.thymio.org/fr:visualprogramming         |
-| Scratch | Scratch                                      | MIT Media Lab, Lifelong Kindergarten Group | https://mobsya.github.io/thymio-scratchx/index.html |
-| Blockly | Blockly                                      | Google                                     | http://wiki.thymio.org/fr:blocklyprogramming        |
-| Aseba   | Aseba Studio                                 | ETHZ, Mobsya, EPFL, INRIA, et d’autres     | http://wiki.thymio.org/fr:asebausermanual           |
-
-## Possibilités et limitations des langages de programmation
-
-| LANGAGE |    PROGRAMMATION<br/>DU ROBOT     | ENREGISTREMENT<br/>SUR EEPROM |
-| :------ | :-------------------------------: | :---------------------------: |
-| VPL     |                 ×                 |                               |
-| Scratch | Pas directement (voir ci-dessous) |                               |
-| Blockly |                 ×                 |                               |
-| Aseba   |                 ×                 |               ×               |
-
-- Les programmes écrits avec Scratch sont exécutés sur l’ordinateur et pas sur le robot. Le câble doit donc toujours rester connecté pour la version filaire de Thymio. Pour la version sans fil, la connexion doit être permanente et cela peut poser des problèmes d’interférences si plusieurs robots sont utilisés ensemble.
-- Les programmes écrits en VPL, Blockly ou Aseba peuvent être exécutés avec ou sans le câble. La déconnexion du câble en cours d’utilisation est possible.
-- Les environnements de programmation Scratch et Blockly sont exécutés dans un navigateur web. Aseba recommande d’utiliser Chrome. Firefox semble poser quelques problèmes. L’enregistrement des fichiers se fait dans le répertoire de téléchargement ce qui rend l’utilisation de ces environnements fastidieuse. Un système d’enregistrement classique serait souhaitable.
-- Seuls les programmes écrits en Aseba peuvent être enregistrés en mémoire permanente (EEPROM) pour que Thymio puisse les exécuter sans la connexion à l’ordinateur lors de la mise sous tension du robot (cette information est peut-être incorrecte, voir la note dans le chapitre suivant).
+http://wiki.thymio.org/fr:thymiosoundlibrary
 
 ## Port série sur macOS
 
